@@ -1,0 +1,149 @@
+/* Import Tailwind layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Global Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-weight: bold;
+  color: #1e3a8a; /* Dark blue */
+}
+
+/* Links */
+a {
+  color: #2563eb; /* Blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #2563eb;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background: #1e40af;
+}
+
+.btn-green {
+  background: #16a34a;
+}
+
+.btn-green:hover {
+  background: #15803d;
+}
+
+.btn-red {
+  background: #dc2626;
+}
+
+.btn-red:hover {
+  background: #b91c1c;
+}
+
+/* Center container for homepage */
+.hero-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #f0f9ff, #e0f2fe);
+  padding: 20px;
+}
+
+.hero-card {
+  max-width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background: #2563eb;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+  margin-left: 15px;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
+}
+
+/* Error text */
+.error-text {
+  color: red;
+  font-size: 0.9rem;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table th {
+  background: #f1f5f9;
+}
